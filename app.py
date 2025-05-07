@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)  # Aktifkan CORS untuk semua route
 
 # Load model dan scaler
-model = joblib.load("model_svm.pkl")
+model = joblib.load("model_xgboost.pkl")
 scaler = joblib.load("scaler.pkl")
 
 # Koneksi ke MongoDB (untuk logging)
